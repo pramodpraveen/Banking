@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	font-weight: bold;
+	background-color:DarkMagenta;
+}
+#my1{
+	color: DarkSalmon;
+}
+#my2{
+	color:Yellow;
+}
+#my3{
+	background-color:LawnGreen;
+}
+#my4{
+	background-color:LightBlue; 
+}
+#my5{
+	background-color:LightCoral;
+}
+span{
+	color: red;
+}
+td{
+	color:FloralWhite;
+}
+h1{
+	margin: 35px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1 id="my1"><u>JSP CRUD APPLICATION FOR USER</u></h1>
+<button id="my3"><a href="viewusers.jsp">View All Records</a></button>
+<p></p>
+<h1 id="my2"><u>Add New User</u></h1>
+<form action="adduser.jsp" method="post" name="f" onsubmit="return check()">
+<table>
+<tr><td>Id:</td>
+<td><input type="number" name="id" placeholder="Enter Id Num"></td></tr>
+<tr><td></td><td><span id="uid_errors"></span></td></tr>
+<tr><td>Name:</td>
+<td><input type="text" name="name" placeholder="Enter Name"></td></tr>
+<tr><td></td><td><span id="name_errors"></span></td></tr>
+<tr><td>Password:</td>
+<td><input type="password" name="password" placeholder="Enter Password"></td></tr>
+<tr><td></td><td><span id="pass_errors"></span></td></tr>
+<tr><td>Email:</td>
+<td><input type="email" name="email" placeholder="Enter Email Id"></td></tr>
+<tr><td></td><td><span id="email_errors"></span></td></tr>
+<tr><td>Sex:</td>
+<td><input type="radio" name="sex" value="male">Male
+	<input type="radio" name="sex" value="female">Female</td></tr>
+	<tr><td></td><td><span id="sex_errors"></span></td></tr>
+<tr><td>Country:</td>
+<td>
+<select name="country" style="width: 155px">
+<option value="">----Select Country----</option>
+<option>India</option>
+<option>America</option>
+<option>Londan</option>
+<option>Pakistan</option>
+<option>Afghanistan</option>
+<option>Berma</option>
+<option>Other</option>
+</select>
+</td></tr><tr><td></td><td><span id="ucoun_errors"></span></td></tr>
+<tr>
+<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="my4" type="submit" Value="Add User">&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="my5" type="reset" Value="Clear"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
